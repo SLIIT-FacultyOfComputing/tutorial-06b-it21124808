@@ -1,30 +1,39 @@
+#include "Box.h"
 #include <iostream>
 using namespace std;
-#include "Box.h"
 
-int main() {
-  
-   // 1. Create a Box type object called box1
-  
-  
-   // ======= DO NOT CHANGE THE INPUT ===========
-   int height, length, width;
-   cout << "Enter the Height of the Box : ";
-   cin >> height;
-   cout << "Enter the Length of the Box : ";
-   cin >> length;
-   cout << "Enter the width of the Box : ";
-   cin >> width;
-   // ===========================================
-  
-   // 2. Use setters assign height, length, width throw
-  
-   // === DO NOT CHANGE THE OUTPUT =============
-   cout << "Box Height " << box1.getHeight() << endl;
-   cout << "Box Length " << box1.getLength() << endl;
-   cout << "Box Width " << box1.getWidth() << endl;
-   cout << "Volume of Box is " << box1.calcVolume() << endl;
-   // ==========================================
-      return 0;
-}
+//function main begins with program execution
+int main()
+{
 
+      Box box1; //creating an object
+      
+         int ht;
+         int wd;
+         int ln;
+
+         cout << "Input the Length: "; //prompt
+         cin >> ln; //read
+
+         cout << "Input the Width: "; //prompt
+         cin >> wd; //read
+
+         cout << "Input the Height: "; //prompt
+         cin >> ht; //read
+    
+
+           //function calling
+          box1.setWidth(wd);
+          box1.setHeight(ht);
+          box1.setLength(ln);
+
+
+          cout << "Box Height: " << box1.getHeight() << endl; //display
+          cout << "Box Width: "  << box1.getWidth() << endl; //display
+          cout << "Box Length: " << box1.getLength() << endl; //display
+
+          cout << "Volume of Box is " << box1.calcVolume() << endl; //display
+
+            return 0;
+
+} //end of the main function

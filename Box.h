@@ -1,11 +1,19 @@
-class Box {
+//class definition
+class Box{
+   //declaring properties inside the class
     private:
-       int length;
-       int width;
-       int height;
+        int length;
+        int width;
+        int height;
+
+    //declaring functions inside the class
     public:
-       // write prototypes of setters for length, width and height
-       // write prototypes of getters for length, width and height
- 
-       int calcVolume();
-};
+        void setLength(int l);
+        void setWidth(int w);
+        void setHeight(int h);
+        int getLength();
+        int getWidth();
+        int getHeight();
+        int calcVolume();
+
+}; //end of the class
